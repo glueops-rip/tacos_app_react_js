@@ -1,0 +1,21 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #d3d3d3;
+    padding: 3px;
+    text-align: center;
+}
+
+td {
+    outline: 1px solid #000;
+    text-align: center;
+    width: 10%;
+}
