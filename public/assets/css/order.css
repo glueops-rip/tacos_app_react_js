@@ -1,0 +1,168 @@
+#main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+#left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-block {
+  border: 1px solid #767676;
+  padding: 0 20px 20px 20px;
+}
+
+#delivery-block {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-areas:
+    "title . ."
+    "hr hr hr"
+    "time . button";
+}
+
+#delivery-block .input-div {
+  grid-area: button;
+}
+
+#close-delivery-time {
+  background-color: #fff;
+  border: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.block-title {
+  /* margin-top: 0; */
+  grid-area: title;
+}
+
+hr {
+  height: 0;
+  border: 0.5px solid #767676;
+  margin: 0 -20px;
+  margin-bottom: 10px;
+  grid-area: hr;
+}
+
+#delivery-time-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  grid-area: time;
+}
+
+#delivery-time-div label:last-child {
+  color: #fff;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 5px
+}
+
+.text-button {
+  color: #008000;
+  background-color: #fff;
+  border: none;
+  grid-area: button;
+}
+
+#location-block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+#location-block hr, #payment-block hr {
+  margin-top: -20px;
+  align-self: stretch;
+}
+
+.location-radio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  accent-color: #008000;
+}
+
+.input-div {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  border: 1px solid #767676;
+  padding: 5px;
+  min-width: 50%;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  padding: 10px;
+}
+
+#payment-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-block {
+  padding: 20px;
+  box-shadow: -2px 0 2px #767676;
+  border: 1px solid #767676;
+  border-right: none;
+  border-bottom: none;
+}
+
+#order-block {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-block button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #008000;
+  color: #fff;
+}
+
+#quantity-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[name="tacos_quantity"] {
+  width: 25%;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #767676;
+}
+
+#quote-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote-row {
+  display: flex;
+  justify-content: space-between;
+}
