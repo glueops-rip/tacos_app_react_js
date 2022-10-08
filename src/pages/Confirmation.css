@@ -1,23 +1,17 @@
 #root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    text-align: center;
 }
 
-div {
-    display: flex;
-    gap: 5px;
+#return {
+    text-align: center;
 }
 
-button {
+#return button {
     color: #008000;
     background-color: #fff;
     border: none;
   }
 
-p {
+#confirmation-message {
     text-align: center;
 }

@@ -10,10 +10,10 @@ class Confirmation extends React.Component {
 
 		return (
 			<>
-				<p>
+				<p id='confirmation-message'>
 					Congratulations, your Order { orderId } has been successfully placed! Expect your tacos in { formatMinutesTime(deliveryTime) } or they are on us!
 				</p>
-				<div>
+				<div id="return">
 					<img src={arrowLeft} alt="arrow-left"/>
 					<button 
 						onClick={() => this.props.navigate('/order/create')}
