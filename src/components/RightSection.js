@@ -57,7 +57,7 @@ class RightSection extends React.Component {
             deliveryTime: getDeliveryTime(new Date(res.data.deliveryDate))
           }});
       })
-      .catch(error => alert(error));
+      .catch(error => this.props.navigate('/error'));
   }
 
   render() {

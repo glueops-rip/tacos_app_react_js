@@ -1,0 +1,13 @@
+#root {
+    text-align: center;
+}
+
+#error-code {
+    font-size: 100px;
+}
+
+#error-message {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+}

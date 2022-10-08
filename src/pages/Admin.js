@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import TableRow from "../components/TableRow";
+import withRouter from "../contexts/routing";
 import "./Admin.css"
 
 class Admin extends React.Component {
@@ -18,7 +19,7 @@ class Admin extends React.Component {
       .then(res => {
         this.setState({...this.state, orders: res.data.orders});
       })
-      .catch(error => alert(error));
+      .catch(error => this.props.navigate('/error'));
   }
 
   render() {
@@ -67,4 +68,4 @@ class Admin extends React.Component {
   }
 }
 
-export default Admin;
+export default withRouter(Admin);
