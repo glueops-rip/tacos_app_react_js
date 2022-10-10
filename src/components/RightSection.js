@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import withRouter from "../contexts/routing";
 import { saveData, UserContext } from "../contexts/UserContext";
-import { getDeliveryTime } from "../utils/utils";
+import { getDeliveryTime, getEndpoint } from "../utils/utils";
 
 class RightSection extends React.Component {
   static contextType = UserContext;
@@ -49,7 +49,7 @@ class RightSection extends React.Component {
     const { state } = this.context;
 
     axios
-      .post('http://localhost:3001/orders/create', state.data)
+      .post(getEndpoint('/orders/create'), state.data)
       .then(res => {
         this.props.navigate("/order/confirmation", {
           state: {

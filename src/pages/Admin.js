@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import TableRow from "../components/TableRow";
 import withRouter from "../contexts/routing";
+import { getEndpoint } from "../utils/utils";
 import "./Admin.css"
 
 class Admin extends React.Component {
@@ -15,7 +16,7 @@ class Admin extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:3001/orders')
+      .get(getEndpoint('/orders'))
       .then(res => {
         this.setState({...this.state, orders: res.data.orders});
       })
