@@ -15,5 +15,5 @@ export const reducer = (state, action) => {
 }
 
 export const initialState = {
-    data: {}
+    data: { quantity: 1 }
 }
