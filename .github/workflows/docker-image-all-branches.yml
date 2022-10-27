@@ -3,13 +3,14 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Publish Docker image
+name: Publish Docker image for all branches
 
 on:
   workflow_dispatch:
   push:
     branches:
       - 'feat/**'
+      - 'main'
 
 
 jobs:
