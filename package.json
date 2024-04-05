@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "serve": "^14.0.1"
+    "serve": "14.0.1"
   }
 }
