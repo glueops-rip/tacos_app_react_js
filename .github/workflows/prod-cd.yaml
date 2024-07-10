@@ -1,0 +1,14 @@
+name: Prod CD
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  update-tags:
+    uses: GlueOps/github-workflows/.github/workflows/argocd-tags-ci.yml@main
+    secrets: inherit
+    with:
+      ENV: 'prod'
+      CREATE_PR: true
