@@ -8,7 +8,7 @@ class Index extends React.Component {
             <>
                 <img id="logo" src={ logo } alt="antonio's logo"/>
                 <div id="message">
-                    Happy Thanksgiving!
+                    Si Se Puede!
                 </div>
             </>
         );
