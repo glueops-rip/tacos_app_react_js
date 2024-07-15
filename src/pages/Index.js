@@ -10,6 +10,10 @@ class Index extends React.Component {
                 <div id="message">
                     Celebre Marisco Martes Con Nosotros!
                 </div>
+                <div class="footer">
+                    <button class="button" onclick="location.href='/order/create'">Order Now</button>
+                    <button class="button" onclick="location.href='/admin'">Admin</button>
+                </div>
             </>
         );
     }
