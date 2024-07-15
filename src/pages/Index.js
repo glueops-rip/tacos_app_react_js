@@ -11,8 +11,8 @@ class Index extends React.Component {
                     Celebre Marisco Martes Con Nosotros!
                 </div>
                 <div class="footer">
-                    <button class="button" onclick="location.href='/order/create'">Order Now</button>
-                    <button class="button" onclick="location.href='/admin'">Admin</button>
+                    <a href="/order/create" class="link-button">Orders</a>
+                    <a href="/admin" class="link-button">Admin</a>
                 </div>
             </>
         );
