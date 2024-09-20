@@ -1,0 +1,14 @@
+name: stage CD
+
+on:
+  pull_request:
+    types:
+      - closed
+jobs:
+  update-tags:
+    uses: GlueOps/github-workflows/.github/workflows/argocd-tags-ci.yml@main
+    if: github.event.pull_request.merged == true
+    secrets: inherit
+    with:
+      ENV: 'stage'
+      CREATE_PR: false

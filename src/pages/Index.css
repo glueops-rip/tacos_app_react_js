@@ -16,5 +16,27 @@ body {
     display: block;
     text-align: center;
     padding: 30px;
-    background-color: #9ADB50;
+    background-color: #6478DC;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF; /* Light grey background */
+}
+
+.link-button {
+    padding: 10px 20px;
+    margin: 10px;  /* Adjusts the space around the links */
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Bootstrap primary blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;  /* Removes underline from links */
+    display: inline-block;  /* Allows padding and width adjustments */
+    white-space: nowrap; /* Ensures text doesn't wrap */
 }
