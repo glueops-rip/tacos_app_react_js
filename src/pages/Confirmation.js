@@ -11,13 +11,18 @@ class Confirmation extends React.Component {
 		return (
 			<>
 				<p id='confirmation-message'>
-					Congratulations, your Order { orderId } has been successfully placed! Expect your tacos in { formatMinutesTime(deliveryTime) } or they are on us!
+					Congratulations, your Order { orderId } has been successfully placed<br /> <br/>
+					Expect your tacos in 60 minutes or they are on us!
 				</p>
 				<div id="return">
-					<img src={arrowLeft} alt="arrow-left"/>
 					<button 
 						onClick={() => this.props.navigate('/order/create')}
-					>Back</button>
+					>- Place another order</button>
+				</div>
+				<div id="return">
+					<button 
+						onClick={() => this.props.navigate('/admin')}
+					>- View all orders</button>
 				</div>
 			</>
 		)
