@@ -1,4 +1,4 @@
-FROM ghcr.io/antoniostaqueria/frontend:8dac501cbb8bdd6fcf213303bd663e7e4d660ade
+FROM node:18-alpine
 WORKDIR /app
 COPY . .
 #RUN npm ci --prefer-offline --only=production --silent
